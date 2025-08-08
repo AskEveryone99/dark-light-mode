@@ -2,8 +2,6 @@
 
 A beautiful and customizable dark/light mode toggle switch with glowing sun and moon icons. Built using **HTML, CSS, and JavaScript**, this toggle is perfect for any website or web app needing theme switching functionality with visual flair.
 
-![Preview](preview.gif)
-
 ---
 
 ## ✨ Features
