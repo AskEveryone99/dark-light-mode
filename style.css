@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #202020;
+  background-image: url('images/dark-bg.jpg'); /*Dark mode backgroundimage*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background 0.5s ease-in-out;
+}
+
+body.light-theme {
+  background-color: #ffffff;
+  background-image: url('images/light-bg.jpg'); /*Light mode background image*/
+}
+
+.toggle-wrapper {
+  position: relative;
+}
+
+.toggle-button {
+  display: none;
+}
+
+.toggle-track {
+  width: 420px;
+  height: 160px;
+  background: rgba(24, 24, 24, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 200px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: background 0.3s ease-in-out;
+}
+
+body.light-theme .toggle-track {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Knob with sun/moon icon */
+.knob {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  width: 140px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: transparent;
+  transition: transform 0.3s ease-in-out;
+}
+
+body.light-theme .knob {
+  transform: translateX(260px);
+}
+
+.knob img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transform: scale(1.8);
+}
+
+/* text on toggle button*/
+.toggle-label {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 25px;
+  font-family: "caveat", cursive;
+  font-weight: 1000;
+  font-size: 40px;
+  color: #0270ff;
+  transition: all 0.3s ease-in-out;
+}
+
+body.light-theme .toggle-label {
+  left: 20%;
+  color: #ffcd45;
+  font-weight: 1000;
+}
