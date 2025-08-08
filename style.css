@@ -97,3 +97,64 @@ body.light-theme .toggle-label {
   color: #ffcd45;
   font-weight: 1000;
 }
+
+@media (max-width: 480px) {
+  .toggle-track {
+    width: 280px;
+    height: 120px;
+  }
+
+  .knob {
+    width: 100px;
+    height: 80px;
+    top: 20px;
+  }
+
+  body.light-theme .knob {
+    transform: translateX(170px);
+  }
+
+  .knob img {
+    transform: scale(1.5);
+  }
+
+  .toggle-label {
+    font-size: 28px;
+    left: 70%;
+  }
+
+  body.light-theme .toggle-label {
+    left: 25%;
+  }
+}
+
+/* For tablets (max 768px) */
+@media (max-width: 768px) {
+  .toggle-track {
+    width: 340px;
+    height: 140px;
+  }
+
+  .knob {
+    width: 120px;
+    height: 100px;
+    top: 25px;
+  }
+
+  body.light-theme .knob {
+    transform: translateX(210px);
+  }
+
+  .knob img {
+    transform: scale(1.6);
+  }
+
+  .toggle-label {
+    font-size: 32px;
+    left: 73%;
+  }
+
+  body.light-theme .toggle-label {
+    left: 27%;
+  }
+}
