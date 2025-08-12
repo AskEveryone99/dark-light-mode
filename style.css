@@ -33,22 +33,23 @@ body.light-theme {
 }
 
 .toggle-track {
-  width: 420px;
+  width: 400px;
   height: 160px;
   background: rgba(24, 24, 24, 0.4);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 200px;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 160px;
   position: relative;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  transition: background 0.3s ease-in-out;
+  transition: background 0.5s ease-in-out;
 }
 
 body.light-theme .toggle-track {
   background: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(1px);
+  box-shadow: 0 0 10px rgba(196, 196, 196, 0.3);
+  transition: background 0.5s ease-in-out;
 }
 
 /* Knob with sun/moon icon */
@@ -63,11 +64,11 @@ body.light-theme .toggle-track {
   align-items: center;
   border-radius: 50%;
   background: transparent;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-out;
 }
 
 body.light-theme .knob {
-  transform: translateX(260px);
+  transform: translateX(230px);
 }
 
 .knob img {
@@ -75,33 +76,32 @@ body.light-theme .knob {
   height: 80%;
   object-fit: contain;
   transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
-  transform: scale(1.8);
+  transform: scale(1.9);
 }
 
 /* text on toggle button*/
 .toggle-label {
   position: absolute;
   top: 50%;
-  left: 75%;
+  left: 85%;
   transform: translateX(-50%) translateY(-50%);
-  font-size: 25px;
   font-family: "caveat", cursive;
   font-weight: 1000;
   font-size: 40px;
   color: #0270ff;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-out;
 }
 
 body.light-theme .toggle-label {
-  left: 20%;
+  left: 15%;
   color: #ffcd45;
   font-weight: 1000;
 }
 
 @media (max-width: 480px) {
   .toggle-track {
-    width: 280px;
-    height: 120px;
+    width: 250px;
+    height: 100px;
   }
 
   .knob {
@@ -138,11 +138,11 @@ body.light-theme .toggle-label {
   .knob {
     width: 120px;
     height: 100px;
-    top: 25px;
+    top: 21px;
   }
 
   body.light-theme .knob {
-    transform: translateX(210px);
+    transform: translateX(200px);
   }
 
   .knob img {
@@ -150,7 +150,7 @@ body.light-theme .toggle-label {
   }
 
   .toggle-label {
-    font-size: 32px;
+    font-size: 40px;
     left: 73%;
   }
 
